@@ -1,0 +1,130 @@
+APLIKASI-BANTUANSOSIALKASIH/
+│
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │
+│   │   │   ├── Auth/
+│   │   │   │   ├── LoginController.php
+│   │   │   │   └── LogoutController.php
+│   │   │   │
+│   │   │   ├── Admin/
+│   │   │   │   ├── DashboardController.php
+│   │   │   │   ├── BantuanController.php
+│   │   │   │   ├── EventBantuanController.php
+│   │   │   │   ├── MasyarakatController.php
+│   │   │   │   ├── PenyaluranController.php
+│   │   │   │   ├── LaporanController.php
+│   │   │   │   └── VerifikasiController.php
+│   │   │   │
+│   │   │   ├── Petugas/
+│   │   │   │   ├── DashboardController.php
+│   │   │   │   ├── PengambilanController.php
+│   │   │   │   ├── PenyaluranController.php
+│   │   │   │   └── EventController.php
+│   │   │   │
+│   │   │   └── Masyarakat/
+│   │   │       ├── DashboardController.php
+│   │   │       ├── PengajuanController.php
+│   │   │       ├── StatusController.php
+│   │   │       └── EventController.php
+│   │   │
+│   │   └── Middleware/
+│   │       ├── AdminMiddleware.php
+│   │       ├── PetugasMiddleware.php
+│   │       └── MasyarakatMiddleware.php
+│   │
+│   ├── Models/
+│   │   ├── User.php
+│   │   ├── Bantuan.php
+│   │   ├── EventBantuan.php
+│   │   ├── Masyarakat.php
+│   │   ├── Pengajuan.php
+│   │   ├── Penyaluran.php
+│   │   ├── Pengambilan.php
+│   │   └── Laporan.php
+│   │
+│   └── Providers/
+│
+├── database/
+│   ├── migrations/
+│   │
+│   │   ├── create_users_table.php
+│   │   ├── create_bantuans_table.php
+│   │   ├── create_event_bantuans_table.php
+│   │   ├── create_masyarakats_table.php
+│   │   ├── create_pengajuans_table.php
+│   │   ├── create_penyalurans_table.php
+│   │   ├── create_pengambilans_table.php
+│   │   └── create_laporans_table.php
+│   │
+│   └── seeders/
+│       ├── UserSeeder.php
+│       ├── BantuanSeeder.php
+│       └── EventSeeder.php
+│
+├── resources/
+│   └── views/
+│       │
+│       ├── layouts/
+│       │   ├── admin.blade.php
+│       │   ├── petugas.blade.php
+│       │   └── masyarakat.blade.php
+│       │
+│       ├── auth/
+│       │   └── login.blade.php
+│       │
+│       ├── admin/
+│       │   │
+│       │   ├── dashboard.blade.php
+│       │   │
+│       │   ├── bantuan/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   ├── edit.blade.php
+│       │   │   └── detail.blade.php
+│       │   │
+│       │   ├── event/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   ├── edit.blade.php
+│       │   │   └── detail.blade.php
+│       │   │
+│       │   ├── masyarakat/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   ├── edit.blade.php
+│       │   │   └── detail.blade.php
+│       │   │
+│       │   ├── penyaluran/
+│       │   ├── laporan/
+│       │   └── verifikasi/
+│       │
+│       ├── petugas/
+│       │   ├── dashboard.blade.php
+│       │   ├── pengambilan/
+│       │   ├── penyaluran/
+│       │   └── event/
+│       │
+│       └── masyarakat/
+│           ├── dashboard.blade.php
+│           ├── pengajuan/
+│           ├── status/
+│           └── event/
+│
+├── routes/
+│   ├── web.php
+│   └── api.php
+│
+├── public/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── uploads/
+│
+├── storage/
+├── vendor/
+├── tests/
+├── .env
+├── artisan
+└── composer.json
